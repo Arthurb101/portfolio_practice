@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script>
+  var theFacts = ["It took 3 trys until I was admitted to BYU", "My family proposes with rings and waffle irons",
+  "I use to drive a Mazda B2000 made in 1986. it didnt have airbags ... my parents didnt like that", "my family has a tradition of going to disneyworld on my birthday ... without me"];
+  function printFact()
+  {
+       var randNum = Math.floor(Math.random() * 4);
+      document.getElementById("facts").innerHTML = theFacts[randNum];
+  }
+
+
+  </script>
+
+</head>
+
+<title>HTML Tutorial</title>
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Work Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+   </nav>
+
+<body>
+
+
+<div class="container">
+  <h1>About</h1>
+<img src="https://lh3.googleusercontent.com/-uDq9Ub5ggmE/AAAAAAAAAAI/AAAAAAAAABY/9PHtNqDiGMs/s640-il/photo.jpg" class="rounded mx-auto d-block">
+<h2>Arthur Buck</h2>
+<p>Arthur is a senior in computer science who will graduate this winter. He is a TA for CS 260 and while students say
+they dont have favorites they defnitely do. Arthur spends his time from sleeping,eating, and socializing. he was born in the year of the dog and definitely has the traits
+of one loyal, kind, and loves to cuddle</p>
+
+
+<h2>some interesting facts about me ...</h2>
+<p id="facts">Kool facts</p>
+<button type="button" onclick="printFact()" class="btn btn-primary">get Facts</button>
+
+</div>
+
+
+</body>
+</html>

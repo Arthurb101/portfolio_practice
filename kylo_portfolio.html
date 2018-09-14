@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="main.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+</head>
+<header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <a class="navbar-brand" href="#">Portfolio</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarNav">
+     <ul class="navbar-nav">
+       <li class="nav-item">
+         <a class="nav-link" href="file:///C:/260TA/about.html
+         ">About</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="#">Work Experience</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="#">Contact</a>
+       </li>
+     </ul>
+   </div>
+  </nav>
+</header>
+<body>
+  <div class="container">
+    <h1>About</h1>
+  <img class="kylor_ren_photo" src="https://vignette.wikia.nocookie.net/starwars/images/4/4a/Kylo_Ren_TLJ.png/revision/latest?cb=20171223080435" class="rounded mx-auto d-block">
+  <h2>Kylo ren</h2>
+  <p> kylo ren is the son of darth vader. His is the best force user in teh whole universe and rey tottally thinks hes cool</p>
+  <h2 id="facts">some interesting facts about me ...</h2>
+  <p >Kool facts</p>
+
+  <button type="button" onclick="printFact()" class="btn btn-primary">get Facts</button>
+  <ol>
+  <li>hello</li>
+  <li>foo</li>
+  <li>bar</li>
+</ol>
+  </div>
+
+
+  <script>
+  var theFacts = ["I killed my dad", "Im will completer my grand fathers legacy",
+  "i secretly love rey"];
+  function printFact()
+  {
+       var randNum = Math.floor(Math.random() * 3);
+      document.getElementById("facts").innerHTML = theFacts[randNum];
+  }
+
+
+  </script>
+</body>
+
+</html>
